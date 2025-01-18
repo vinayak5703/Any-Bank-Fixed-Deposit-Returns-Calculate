@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposit Returns Calculator</title>
+    <link href="styles1.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h2 class="text-center">Any Bank Fixed Deposit Returns Calculator</h2>
+        <form id="fdForm" class="form-container">
+            <div class="mb-3">
+                <label for="amount" class="form-label">Investment Amount (₹)</label>
+                <input type="number" class="form-control" id="amount" required>
+            </div>
+            <div class="mb-3">
+                <label for="duration" class="form-label">Investment Duration (in years)</label>
+                <input type="number" class="form-control" id="duration" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate Returns</button>
+        </form>
+        <hr>
+        <h4>Calculated Returns:</h4>
+        <p id="result"></p>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
